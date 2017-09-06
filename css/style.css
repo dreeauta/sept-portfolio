@@ -1,0 +1,183 @@
+
+.menu-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 40px;
+  z-index: 100;
+  }
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+  font-family: 'Inconsolata', monospace;
+
+}
+
+.menu a:hover {
+  color: purple;
+}
+
+.title-wrapper {
+  height: 100vh;
+  background-image: url(../img/background.gif);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-wrapper p {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 36px;
+  color: white;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.skills-wrapper {
+  margin-top: 80px;
+}
+
+.skills h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills {
+  text-align: center;
+  height: 500px;
+}
+
+.skills ul {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.skills ul img {
+  height: 100px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.skills li {
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+
+.project-wrapper {
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.project-wrapper h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-container h2 {
+  text-align: center;
+}
+
+.project-container {
+  width: 50%;
+  display: inline-block;
+  /*border: 2px solid black;*/
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.project-container-right {
+  float: right;
+}
+
+.project-container img {
+  display: inline-block;
+}
+
+.project-text {
+  display: inline-block;
+  width: 50%;
+  float: right;
+  margin-top: 60px;
+}
+
+.project-technologies {
+  margin-top: 20px;
+}
+.project-technologies span {
+  font-weight: bold;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.about-wrapper {
+  clear: right;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.about-wrapper h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.about-wrapper img {
+  margin-left: 30px;
+}
+
+.about-text{
+  padding-bottom: 30px;
+  width: 60%;
+  margin: auto;
+}
+
+.about-text a {
+  border: none;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+.resume a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  background-color: black;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+}
