@@ -1,33 +1,48 @@
+/*GLOBAL*/
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: 'Covered By Your Grace', cursive;
+  letter-spacing: .2em;
+  padding-top:40px;
+}
+
 
 .menu-wrapper {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0,0,0,.5);
   height: 55px;
+  position: absolute;
 }
 
 .menu {
   display: flex;
   align-items: center;
   padding-left: 30px;
-  background-color: rgba(0,0,0,.5);
-  width: 100%;
+  /*background-color: rgba(0,0,0,.5);*/
   height: 40px;
   z-index: 100;
   }
+
+
+
 
 .menu a {
   text-decoration: none;
   color: white;
   margin-right: 35px;
   font-family: 'Poppins', sans-serif;
-  transition: 0s color;
-
+  transition: 0s border;
+  padding-bottom: 5px;
 }
 
 .menu a:hover {
-  color: rgb(58, 84, 140);
+  /*color: rgb(58, 84, 140);*/
+  border-bottom: 2px solid white;
   transition-delay:.2s;
 }
 
@@ -36,18 +51,20 @@
   background-image: url(../img/background.gif);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .title-wrapper p {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
   font-size: 36px;
   color: white;
   font-family: 'Covered By Your Grace', cursive;
 }
 
 .skills-wrapper {
-  margin-top: 80px;
+  margin-top: 50px;
+  height: 550px;
 }
 
 .skills h1 {
@@ -58,7 +75,8 @@
 
 .skills {
   text-align: center;
-  height: 500px;
+  width: 90%;
+  margin: auto;
 }
 
 .skills ul {
@@ -87,9 +105,17 @@
 
 
 .project-wrapper {
+  padding-top: 50px;
+  background-image: url('../img/flower-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#project {
   width: 95%;
   margin: auto;
-  padding-top: 50px;
+
 }
 
 .project-wrapper h1 {
@@ -97,30 +123,50 @@
   font-size: 45px;
   margin-bottom: 40px;
   font-family: 'Covered By Your Grace', cursive;
-
+  letter-spacing: .2em;
 }
 
 .project-container h2 {
   text-align: center;
   font-size: 20px;
   padding: 20px 0px;
+  letter-spacing: .125em;
+}
+
+@keyframes move-left {
+    from {right: 400px;}
+    to {right: 0px;}
+}
+
+@keyframes move-right {
+    from {left: 400px;}
+    to {left: 0px;}
 }
 
 .project-container {
-  width: 50%;
+  width: 45%;
   display: inline-block;
   /*border: 2px solid black;*/
   height: 350px;
   padding: 20px;
   margin-bottom: 30px;
-  background-color: rgb(58, 84, 140);
+  background-color: rgba(58, 84, 140,0.8);
   border-radius: 20px;
   color: white;
   font-family: 'Poppins', sans-serif;
+  position: relative;
 }
+
+.project-container-left {
+  animation-name: move-left;
+  animation-duration: 4s;
+}
+
 
 .project-container-right {
   float: right;
+  animation-name: move-right !important;
+  animation-duration: 4s;
 }
 
 .project-container img {
@@ -170,7 +216,7 @@
   width: 85%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .about-wrapper h1 {
@@ -186,21 +232,27 @@
 }
 
 .about-text{
-  padding-bottom: 30px;
+  display: inline-block;
+  margin-bottom: 60px;
   padding-top: 40px;
-  width: 60%;
-  margin: auto;
+  padding-left: 40px;
+  vertical-align: top;
+  width: 50%;
   font-family: 'Poppins', sans-serif;
   line-height: 1.7em;
   word-spacing: .2em;
 
 }
 
-.about-text a {
+.about-text a, .contact-text a {
   border: none;
   padding: 0;
-  background-color: white;
+  /*background-color: white;*/
   color: black;
+}
+
+.contact-text a:hover {
+  color: purple;
 }
 
 .resume a{
@@ -210,7 +262,8 @@
   border: 2px solid black;
   background-color: white;
   padding: 10px 40px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   border-radius: 4px;
   transition: 0s color, 0s background-color;
@@ -222,6 +275,40 @@
   transition-delay:.2s;
 }
 
+.contact-wrapper {
+  background-image: url('../img/flower-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.contact-container {
+  width: 50%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.contact-text h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Covered By Your Grace', cursive;
+  letter-spacing: .2em;
+}
+
+.contact-text {
+  background-color: rgba(255,255,255,.7);
+  border: 2px solid black;
+  padding: 20px 50px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.contact-text p {
+  padding: 30px 0;
+}
 
 .icons a {
   text-decoration: none;

@@ -13,11 +13,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <link rel="text/javascript" href="script.js">
+    <script type="text/javascript" src="script.js"> </script>
 
   </head>
   <body>
@@ -34,17 +32,17 @@
     </div>
 
 
-      <div class="title-wrapper" id="home">
+      <section class="title-wrapper" id="home">
 
         <p>Hi! My name is Andreea Uta <br>
         and I am a full stack developer and designer.
         </p>
 
 
-      </div>
+      </section>
 
 
-    <div class="skills-wrapper">
+    <section class="skills-wrapper">
 
       <div id="skills">
 
@@ -70,7 +68,9 @@
 
     </div>
 
-    <div class="project-wrapper">
+    </section>
+
+    <section class="project-wrapper">
 
       <div id="project">
         <h1> Projects </h1>
@@ -80,9 +80,9 @@
 
         <div class="project-container project-container-left project-container-handcrafted">
           <h2>Handcrafted </h2>
-          <img src="img/handcrafted.png">
+          <img class="front" src="img/handcrafted.png">
 
-          <div class="project-text">
+          <div class="project-text back">
             <p> I built an eccomerce site featuring local artists and art events in Atlanta. I learned how to use Redux. </p>
             <p class="project-technologies"> <span>Technologies: </span> React, Redux, CSS, Javascript, PostgreSQL </p>
             <div class="project-links">
@@ -112,7 +112,7 @@
 
           <div class="project-text">
             <!-- I helped build an application with a team of 4 to connect Marta and local Atlanta businesses together. -->
-            <p> 
+            <p>
               Smarta links Yelp, Marta, and Google Maps together to easily search for businesses along your Marta route. </p>
             <p class="project-technologies"> <span>Technologies: </span> Express, Node.JS, BlueBird, HTML, CSS, Javascript </p>
             <div class="project-links">
@@ -136,9 +136,9 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="about-wrapper">
+    <section class="about-wrapper">
 
         <div id="about">
 
@@ -150,15 +150,29 @@
         I am a full-stack developer that recently graduated from Digital Crafts. I build and design
         applications using HTML, CSS, and JavaScript.
         I'm passionate about art and graphic design.
-        I also love to explore hiking trails with my dogs. For any business or career opportunities
-         please contact me at <a href="mailto:dreea.9965@gmail.com">dreea.9965@gmail.com</a>.
+        I also love to explore hiking trails with my dogs.
         </p>
-      <span class="resume">  <a class="resume" href="img/AndreeaUtaresume.pdf"> Resume </a> </span>
 
       </div>
 
+      <span class="resume">  <a class="resume" href="img/AndreeaUtaresume.pdf"> Resume </a> </span>
 
-      <div class="icons-container">
+
+
+
+    </section>
+
+    <section class="contact-wrapper">
+
+
+    <div class="contact-container">
+        <div class="contact-text">
+          <h1>Contact </h1>
+
+          <p>For any business or career opportunities
+          please contact me at <a href="mailto:dreea.9965@gmail.com">dreea.9965@gmail.com</a>.
+        </p>
+
         <div class="icons">
         <a href="github.com">  <img src="img/github.png"/>  </a>
         <a href="linkedin.com">  <img src="img/linkedin.png"/>  </a>
@@ -167,6 +181,8 @@
       </div>
 
     </div>
+
+    </section>
 
 
   </body>
