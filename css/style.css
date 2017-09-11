@@ -17,6 +17,7 @@ h1 {
   background-color: rgba(0,0,0,.5);
   height: 55px;
   position: absolute;
+  border-bottom: 2px solid white;
 }
 
 .menu {
@@ -30,20 +31,19 @@ h1 {
 
 
 
-
 .menu a {
   text-decoration: none;
   color: white;
-  margin-right: 35px;
+  /*margin-right: 35px;*/
   font-family: 'Poppins', sans-serif;
-  transition: 0s border;
-  padding-bottom: 5px;
+  transition: 0s background-color, 0s font-size;
+  padding: 15px 30px;
 }
 
 .menu a:hover {
-  /*color: rgb(58, 84, 140);*/
-  border-bottom: 2px solid white;
-  transition-delay:.2s;
+  font-size: 18px;
+  /*background-color: rgba(0,0,0,.5);*/
+  transition-delay:.3s;
 }
 
 .title-wrapper {
@@ -150,24 +150,39 @@ h1 {
   height: 350px;
   padding: 20px;
   margin-bottom: 30px;
-  background-color: rgba(58, 84, 140,0.8);
+  background-color: rgba(58, 84, 140, 0.7);
   border-radius: 20px;
   color: white;
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
 
-.project-container-left {
+.project-container-handcrafted {
   animation-name: move-left;
-  animation-duration: 4s;
+  animation-duration: 5s;
 }
 
+.project-container-blackjack {
+  animation-name: move-right !important;
+  animation-duration: 5s;
+}
+
+.project-container-smarta{
+  animation-name: move-left;
+  animation-duration: 5s;
+
+}
+
+.project-container-drawingthings{
+  animation-name: move-right !important;
+  animation-duration: 5s;
+
+}
 
 .project-container-right {
   float: right;
-  animation-name: move-right !important;
-  animation-duration: 4s;
 }
+
 
 .project-container img {
   display: inline-block;
