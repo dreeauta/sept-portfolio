@@ -6,11 +6,12 @@ h1 {
   margin-bottom: 40px;
   font-family: 'Covered By Your Grace', cursive;
   letter-spacing: .2em;
-  padding-top:40px;
+  padding-top: 30px;
+  color: rgb(58, 84, 100);
 }
 
 
-.menu-wrapper {
+/*.menu-wrapper {
   display: flex;
   width: 100%;
   align-items: center;
@@ -24,92 +25,96 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 30px;
-  /*background-color: rgba(0,0,0,.5);*/
   height: 40px;
   z-index: 100;
-  }
+  }*/
 
 
 
-.menu a {
-  text-decoration: none;
-  color: white;
-  /*margin-right: 35px;*/
-  font-family: 'Poppins', sans-serif;
-  transition: 0s background-color, 0s font-size;
-  padding: 15px 30px;
-}
-
-.menu a:hover {
-  font-size: 18px;
-  /*background-color: rgba(0,0,0,.5);*/
-  transition-delay:.3s;
-}
 
 .title-wrapper {
   height: 100vh;
-  background-image: url(../img/background.gif);
+  background-image: url(../img/title-bg.gif);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+.title-container {
+  padding-top: 150px;
+}
+
 .title-wrapper p {
   text-align: center;
-  padding-top: 200px;
+  margin: auto;
+  background-color: rgba(255,255,255,.3);
+  /*-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
+  padding: 40px 30px;
+  width: 50%;
   font-size: 36px;
-  color: white;
+  color: black;
   font-family: 'Covered By Your Grace', cursive;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .skills-wrapper {
   margin-top: 50px;
-  height: 550px;
+  height: 580px;
+
 }
 
 .skills h1 {
-  font-size: 45px;
   margin-bottom: 40px;
-  font-family: 'Covered By Your Grace', cursive;
 }
 
 .skills {
   text-align: center;
   width: 90%;
   margin: auto;
+  display: none;
 }
 
-.skills ul {
+.skills {
   columns: 4;
   -webkit-columns: 4;
   -moz-columns: 4;
 }
 
-.skills ul img {
+.skills img {
   height: 100px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
 }
 
-.skills ul img:hover {
-  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(50%);
+.skills img:hover {
+  -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(30%);
 }
 
 .skills li {
   vertical-align: top;
   margin-bottom: 20px;
+  animation: slide-up 3s;
 }
 
+@keyframes slide-up {
+  from { opacity: .25; line-height: 500px;}
+  to {opacity: 1;line-height: 25px;}
+}
 
 
 
 .project-wrapper {
   padding-top: 50px;
-  background-image: url('../img/flower-background.jpg');
+  background-image: url('../img/projects-bg.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 100px;
 }
 
 #project {
@@ -119,11 +124,8 @@ h1 {
 }
 
 .project-wrapper h1 {
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 40px;
-  font-family: 'Covered By Your Grace', cursive;
-  letter-spacing: .2em;
+  color: white;
+  text-shadow: 2px 2px #000;
 }
 
 .project-container h2 {
@@ -131,6 +133,11 @@ h1 {
   font-size: 20px;
   padding: 20px 0px;
   letter-spacing: .125em;
+  text-shadow: 2px 2px #000;
+}
+
+.project-container img {
+  margin: 10px 0 0 20px;
 }
 
 @keyframes move-left {
@@ -150,33 +157,39 @@ h1 {
   height: 350px;
   padding: 20px;
   margin-bottom: 30px;
-  background-color: rgba(58, 84, 140, 0.7);
-  border-radius: 20px;
+  background-color: rgba(58, 84, 100, 0.7);
+  border-radius: 5px;
   color: white;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+
 }
 
 .project-container-handcrafted {
   animation-name: move-left;
   animation-duration: 5s;
+  animation-delay: 2s;
 }
 
 .project-container-blackjack {
   animation-name: move-right !important;
   animation-duration: 5s;
+  animation-delay: 2s;
 }
 
 .project-container-smarta{
   animation-name: move-left;
   animation-duration: 5s;
-
+  animation-delay: 4s;
 }
 
 .project-container-drawingthings{
   animation-name: move-right !important;
   animation-duration: 5s;
-
+  animation-delay: 4s;
 }
 
 .project-container-right {
@@ -232,14 +245,12 @@ h1 {
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.about-wrapper h1 {
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 45px;
-  font-family: 'Covered By Your Grace', cursive;
-
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .about img {
@@ -254,9 +265,9 @@ h1 {
   vertical-align: top;
   width: 50%;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.7em;
+  line-height: 2em;
   word-spacing: .2em;
-
+  animation: fadein 5s;
 }
 
 .about-text a, .contact-text a {
@@ -291,7 +302,7 @@ h1 {
 }
 
 .contact-wrapper {
-  background-image: url('../img/flower-background.jpg');
+  background-image: url('../img/contact-bg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -305,24 +316,23 @@ h1 {
 }
 
 .contact-text h1 {
-  padding-top: 30px;
-  text-align: center;
-  font-size: 45px;
-  font-family: 'Covered By Your Grace', cursive;
-  letter-spacing: .2em;
+  margin-bottom: 15px;
 }
 
+
 .contact-text {
-  background-color: rgba(255,255,255,.7);
-  border: 2px solid black;
+  background-color: rgba(255,255,255,.8);
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   padding: 20px 50px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 .contact-text p {
-  padding: 30px 0;
+  padding: 10px 0 30px;
 }
 
 .icons a {

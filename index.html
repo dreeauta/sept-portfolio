@@ -10,9 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="script.js"> </script>
@@ -20,23 +23,36 @@
   </head>
   <body>
 
-    <div class="menu-wrapper">
-
-      <ul class="menu">
-        <li> <a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li>  <a href="#project">Projects</a></li>
-        <li> <a href="#about"> About</a></li>
-      </ul>
-
-    </div>
 
 
       <section class="title-wrapper" id="home">
+        <div class="menu-wrapper" id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
 
-        <p>Hi! My name is Andreea Uta <br>
-        and I am a full stack developer and designer.
-        </p>
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+
+          <ul id="menu">
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li>  <a href="#project">Projects</a></li>
+            <li> <a href="#about"> About</a></li>
+          </ul>
+        </div>
+
+        <div class="title-container">
+
+          <p class="title">Hi! My name is Andreea Uta <br>
+          and I am a full stack developer and designer.
+          </p>
+        </div>
 
 
       </section>
@@ -47,9 +63,9 @@
       <div id="skills">
 
         <div class="skills-container">
-          <div class="skills">
+          <div >
             <h1>Skills</h1>
-            <ul>
+            <ul class="skills">
               <li> <img src="img/icon/htmlicon.png" alt="HTML" title="HTML"> </li>
               <li> <img src="img/icon/cssicon.png" alt="CSS" title="CSS"> </li>
               <li><img src="img/icon/scssicon.png" alt="SCSS" title="SCSS"> </li>
@@ -174,9 +190,9 @@
         </p>
 
         <div class="icons">
-        <a href="github.com">  <img src="img/github.png"/>  </a>
-        <a href="linkedin.com">  <img src="img/linkedin.png"/>  </a>
-        <a href="gmail.com>"> <img src="img/gmail.png"/>   </a>
+        <a href="https://github.com/dreeauta">  <img src="img/icon/github.png"/>  </a>
+        <a href="https://www.linkedin.com/in/andreea-uta/">  <img src="img/icon/linkedin.png"/>  </a>
+        <a href="https://www.instagram.com/dreeallama_art/>"> <img src="img/icon/instagram.png"/>   </a>
         </div>
       </div>
 
