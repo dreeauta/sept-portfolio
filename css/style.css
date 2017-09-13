@@ -346,3 +346,65 @@ h1 {
   filter: blur(2px);
   transition-delay:.2s;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .title-container {
+    padding-top: 120px;
+  }
+
+
+  .skills {
+    columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  }
+
+  .skills li {
+    animation: none;
+  }
+
+  .skills img {
+    height: 70px;
+  }
+
+  .project-container {
+    margin-left: 15px;
+    margin-bottom: 40px;
+    height: 550px;
+    width: 80%;
+    animation: none;
+    text-align: center;
+  }
+
+  .project-container-right {
+    float: none;
+  }
+
+  .project-text {
+    width: 100%;
+    float: none;
+  }
+
+  .project-container img {
+    margin: 0;
+  }
+
+  .about-text {
+    width: 80%;
+    padding-left: 0;
+    animation: none;
+    margin-bottom: 30px;
+  }
+
+  .contact-wrapper {
+    height: 100vh;
+  }
+
+  .contact-container {
+    width: 90%;
+  }
+
+}
