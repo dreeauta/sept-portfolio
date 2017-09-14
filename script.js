@@ -19,6 +19,7 @@ $( ".project-container" ).hide();
 $(document).scroll(function() {
     if($(this).scrollTop() > project + 300 ) {
         $(".project-container").show();
+
     }
 });
 

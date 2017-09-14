@@ -169,27 +169,27 @@ h1 {
 }
 
 .project-container-handcrafted {
-  animation-name: move-left;
+  animation-name: move-left, fadein;
   animation-duration: 5s;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .project-container-blackjack {
-  animation-name: move-right !important;
+  animation-name: move-right, fadein !important;
   animation-duration: 5s;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .project-container-smarta{
-  animation-name: move-left;
+  animation-name: move-left, fadein;
   animation-duration: 5s;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
-.project-container-drawingthings{
-  animation-name: move-right !important;
+.project-container-tictactoe{
+  animation-name: move-right, fadein !important;
   animation-duration: 5s;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .project-container-right {
