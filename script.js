@@ -17,11 +17,20 @@ var project = $(".skills").offset().top;
 $( ".project-container" ).hide();
 
 $(document).scroll(function() {
-    if($(this).scrollTop() > project + 300 ) {
+    if($(this).scrollTop() > 770 ) {
         $(".project-container").show();
 
     }
 });
+
+// var $window = $(window);
+//
+// $(window).on('scroll', function() {
+//     $topOffset = $(this).scrollTop();
+//
+//     console.log($topOffset);
+//
+// });
 
 
 var about = $(".about-wrapper").offset().top;

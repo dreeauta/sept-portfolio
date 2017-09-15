@@ -65,6 +65,7 @@ h1 {
 
 
 
+
 .skills-wrapper {
   margin-top: 50px;
   height: 580px;
@@ -173,28 +174,29 @@ h1 {
 
 }
 
+
 .project-container-drawingthings {
   animation-name: move-left, fadein;
   animation-duration: 5s;
-  animation-delay: 1s;
+  /*animation-delay: 1s;*/
 }
 
 .project-container-blackjack {
   animation-name: move-right, fadein !important;
   animation-duration: 5s;
-  animation-delay: 1s;
+  /*animation-delay: 1s;*/
 }
 
 .project-container-smarta{
   animation-name: move-left, fadein;
   animation-duration: 5s;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .project-container-tictactoe{
   animation-name: move-right, fadein !important;
   animation-duration: 5s;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .project-container-right {
@@ -272,7 +274,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   line-height: 2em;
   word-spacing: .2em;
-  animation: fadein 5s;
+  animation: fadein 7s;
 }
 
 .about-text a, .contact-text a {
@@ -354,10 +356,10 @@ h1 {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
   #menu {
-    background-color: white;
+    background-color: white !important;
   }
 
   .title-container {
@@ -408,8 +410,8 @@ h1 {
   .about-text {
     width: 80%;
     padding-left: 0;
-    animation: none;
     margin-bottom: 30px;
+    animation: none;
   }
 
   .contact-wrapper {
