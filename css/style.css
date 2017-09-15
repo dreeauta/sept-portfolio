@@ -31,7 +31,6 @@ h1 {
 
 
 
-
 .title-wrapper {
   height: 100vh;
   background-image: url(../img/title-bg.gif);
@@ -44,7 +43,7 @@ h1 {
   padding-top: 150px;
 }
 
-.title-wrapper p {
+.title-container p {
   text-align: center;
   margin: auto;
   background-color: rgba(255,255,255,.3);
@@ -52,14 +51,15 @@ h1 {
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
   padding: 40px 30px;
-  width: 50%;
+  /*width: 50%;*/
   font-size: 36px;
   color: black;
   font-family: 'Covered By Your Grace', cursive;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
 
 .skills-wrapper {
   margin-top: 50px;
@@ -168,7 +168,7 @@ h1 {
 
 }
 
-.project-container-handcrafted {
+.project-container-drawingthings {
   animation-name: move-left, fadein;
   animation-duration: 5s;
   animation-delay: 1s;
@@ -349,10 +349,18 @@ h1 {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+
+  #menu {
+    background-color: white;
+  }
 
   .title-container {
     padding-top: 120px;
+  }
+
+  .title-container p {
+    width: 70%;
   }
 
 
