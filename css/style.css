@@ -50,15 +50,19 @@ h1 {
   /*-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
-  padding: 40px 30px;
-  /*width: 50%;*/
+  padding: 50px 50px;
+  width: 50%;
   font-size: 36px;
-  color: black;
+  color: white;
   font-family: 'Covered By Your Grace', cursive;
   background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
   background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-shadow: 2px 2px #000;
+  letter-spacing: .075em;
 }
+
+
 
 
 .skills-wrapper {
@@ -69,6 +73,7 @@ h1 {
 
 .skills h1 {
   margin-bottom: 40px;
+
 }
 
 .skills {
