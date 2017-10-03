@@ -21,6 +21,7 @@ $(document).scroll(function() {
         $(".project-container").show();
 
     }
+
 });
 
 // var $window = $(window);

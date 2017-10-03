@@ -169,14 +169,14 @@ h1 {
 
 .project-container-smarta{
   animation-name: move-left, fadein;
-  animation-duration: 5s;
-  animation-delay: 2s;
+  animation-duration: 7s;
+  animation-delay: 1s;
 }
 
 .project-container-tictactoe{
   animation-name: move-right, fadein !important;
-  animation-duration: 5s;
-  animation-delay: 2s;
+  animation-duration: 7s;
+  animation-delay: 1s;
 }
 
 .project-container-right {
