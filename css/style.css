@@ -15,26 +15,10 @@ h1 {
 }
 
 
-  video#bgvid {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -100;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-      background: url(img/projects-bg.png) no-repeat;
-      background-size: cover;
-  }
-
 
 .title-wrapper {
   height: 100vh;
+  background: url('../img/title-bg.gif') no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -354,9 +338,17 @@ h1 {
 
 @media only screen and (max-width: 900px) {
 
+
+
   #menu {
     background-color: white !important;
   }
+
+  .title-wrapper {
+    background: url('../img/projects-bg.png') no-repeat;
+  }
+
+
 
   .title-container {
     padding-top: 120px;
