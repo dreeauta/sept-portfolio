@@ -14,7 +14,7 @@ h1 {
   color: rgb(58, 84, 100);
 }
 
-/*video#bgvid {
+video#bgvid {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,13 +29,13 @@ h1 {
     transform: translateX(-50%) translateY(-50%);
     background: url(img/projects-bg.png) no-repeat;
     background-size: cover;
-}*/
+}
 
 
 
 .title-wrapper {
   height: 100vh;
-  background-image: url(../img/title-bg.gif);
+  /*background-image: url(../img/title-bg.gif);*/
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
