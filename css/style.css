@@ -14,7 +14,7 @@ h1 {
   color: rgb(58, 84, 100);
 }
 
-video#bgvid {
+/*video#bgvid {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,12 +29,13 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(img/projects-bg.png) no-repeat;
     background-size: cover;
-}
+}*/
 
 
 
 .title-wrapper {
   height: 100vh;
+  background-image: url(../img/title-bg.gif);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -104,7 +105,7 @@ video#bgvid {
 }
 
 @keyframes slide-up {
-  from { opacity: .25; line-height: 500px;}
+  from { opacity: .25; line-height: 600px;}
   to {opacity: 1;line-height: 25px;}
 }
 
@@ -143,13 +144,13 @@ video#bgvid {
 }
 
 @keyframes move-left {
-    from {right: 400px;}
-    to {right: 0px;}
+    from {opacity: 0; right: 400px;}
+    to {opacity: 1; right: 0px;}
 }
 
 @keyframes move-right {
-    from {left: 400px;}
-    to {left: 0px;}
+    from {opacity: 0; left: 400px;}
+    to {opacity: 1; left: 0px;}
 }
 
 .project-container {
