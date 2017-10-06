@@ -14,6 +14,24 @@ h1 {
   color: rgb(58, 84, 100);
 }
 
+/*KEYFRAMES*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes move-left {
+    from {opacity: 0; right: 400px;}
+    to {opacity: 1; right: 0px;}
+}
+
+@keyframes move-right {
+    from {opacity: 0; left: 400px;}
+    to {opacity: 1; left: 0px;}
+}
+
+
 video#bgvid {
     position: absolute;
     top: 50%;
@@ -143,15 +161,6 @@ video#bgvid {
   margin: 10px 0 0 20px;
 }
 
-@keyframes move-left {
-    from {opacity: 0; right: 400px;}
-    to {opacity: 1; right: 0px;}
-}
-
-@keyframes move-right {
-    from {opacity: 0; left: 400px;}
-    to {opacity: 1; left: 0px;}
-}
 
 .project-container {
   width: 45%;
@@ -252,10 +261,6 @@ video#bgvid {
   padding-bottom: 50px;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
 
 .about img {
   margin-left: 30px;
