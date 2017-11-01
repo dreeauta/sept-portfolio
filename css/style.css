@@ -205,6 +205,13 @@ video#bgvid {
   animation-delay: 1s;
 }
 
+.project-container-coolgadgetsguru {
+  animation-name: move-left, fadein;
+  animation-duration: 7s;
+  animation-delay: 3s;
+
+}
+
 .project-container-right {
   float: right;
 }
@@ -238,7 +245,8 @@ video#bgvid {
   text-decoration: none;
   color: white;
   margin: 10px;
-  transition: 0s color;
+  transition: color 2s;
+  transition: padding 2s;
 }
 
 .project-links a:first-child {
@@ -247,9 +255,11 @@ video#bgvid {
 
 }
 
+
 .project-links a:hover {
-  color: black;
-  transition-delay: .2s;
+  /*color: black;*/
+  border: 2px solid white;
+  padding: 10px 20px;
 }
 
 .about-wrapper {
