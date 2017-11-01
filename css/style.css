@@ -244,14 +244,20 @@ video#bgvid {
 .project-links a {
   text-decoration: none;
   color: white;
-  margin: 10px;
+  /*margin: 10px;*/
   transition: color 2s;
   transition: padding 2s;
 }
 
 .project-links a:first-child {
-  border-right: 2px solid white;
+  border-right: 1px solid white;
   padding-right: 15px;
+
+}
+
+.project-links a:last-child {
+  border-left: 1px solid white;
+  padding-left: 15px;
 
 }
 
