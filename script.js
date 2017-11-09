@@ -18,11 +18,17 @@ $( ".project-container" ).hide();
 
 $(document).scroll(function() {
     if($(this).scrollTop() > 770 ) {
-        $(".project-container").show();
+      $(".project-container-drawingthings").delay(500).fadeIn(500);
+      $(".project-container-blackjack").delay(1000).fadeIn(500);
+      $(".project-container-smarta").delay(1500).fadeIn(500);
+      $(".project-container-tictactoe").delay(2000).fadeIn(500);
+      $(".project-container-coolgadgetsguru").delay(2500).fadeIn(500);
 
     }
 
 });
+
+
 
 // var $window = $(window);
 //
@@ -33,15 +39,21 @@ $(document).scroll(function() {
 //
 // });
 
+console.log($(document).scrollTop());
+
 
 var about = $(".about-wrapper").offset().top;
 $( ".about-text" ).hide();
 
 $(document).scroll(function() {
-    if($(this).scrollTop() > about + 100 ) {
-        $(".about-text").show();
+    if($(this).scrollTop() > 1800 ) {
+      $(".about-text").delay(1000).fadeIn(2000);
     }
 });
+
+
+
+
 
 
 });

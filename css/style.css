@@ -16,7 +16,7 @@ h1 {
 
 /*KEYFRAMES*/
 
-@keyframes fadein {
+/*@keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -29,7 +29,7 @@ h1 {
 @keyframes move-right {
     from {opacity: 0; left: 400px;}
     to {opacity: 1; left: 0px;}
-}
+}*/
 
 
 video#bgvid {
@@ -123,7 +123,7 @@ video#bgvid {
 }
 
 @keyframes slide-up {
-  from { opacity: .25; line-height: 600px;}
+  from { opacity: 0; line-height: 500px;}
   to {opacity: 1;line-height: 25px;}
 }
 
@@ -180,17 +180,15 @@ video#bgvid {
 
 }
 
-
+/*
 .project-container-drawingthings {
   animation-name: move-left, fadein;
   animation-duration: 5s;
-  /*animation-delay: 1s;*/
 }
 
 .project-container-blackjack {
   animation-name: move-right, fadein !important;
   animation-duration: 5s;
-  /*animation-delay: 1s;*/
 }
 
 .project-container-smarta{
@@ -210,7 +208,7 @@ video#bgvid {
   animation-duration: 7s;
   animation-delay: 3s;
 
-}
+}*/
 
 .project-container-right {
   float: right;
@@ -292,7 +290,7 @@ video#bgvid {
   font-family: 'Poppins', sans-serif;
   line-height: 2em;
   word-spacing: .2em;
-  animation: fadein 7s;
+  /*animation: fadein 7s;*/
 }
 
 .about-text a, .contact-text a {
