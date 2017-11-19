@@ -60,22 +60,25 @@ video#bgvid {
 }
 
 .title-container {
-  padding-top: 150px;
+  margin-top: 200px;
+  background-color: rgba(255,255,255,.5);
+  width: 50%;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  float: right;
 }
 
 .title-container p {
   text-align: center;
   margin: auto;
-  background-color: rgba(255,255,255,.4);
   padding: 80px 50px;
-  width: 90%;
-  font-size: 40px;
+  width: 70%;
+  font-size: 36px;
   color: white;
-  font-family: 'Covered By Your Grace', cursive;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  text-shadow: 2px 2px #000;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 3px 3px 3px  #000;
+
   letter-spacing: .075em;
   line-height: 1.4em;
 }
@@ -181,35 +184,6 @@ video#bgvid {
 
 }
 
-/*
-.project-container-drawingthings {
-  animation-name: move-left, fadein;
-  animation-duration: 5s;
-}
-
-.project-container-blackjack {
-  animation-name: move-right, fadein !important;
-  animation-duration: 5s;
-}
-
-.project-container-smarta{
-  animation-name: move-left, fadein;
-  animation-duration: 7s;
-  animation-delay: 1s;
-}
-
-.project-container-tictactoe{
-  animation-name: move-right, fadein !important;
-  animation-duration: 7s;
-  animation-delay: 1s;
-}
-
-.project-container-coolgadgetsguru {
-  animation-name: move-left, fadein;
-  animation-duration: 7s;
-  animation-delay: 3s;
-
-}*/
 
 .project-container-right {
   float: right;
@@ -243,9 +217,7 @@ video#bgvid {
 .project-links a {
   text-decoration: none;
   color: white;
-  /*margin: 10px;*/
-  transition: color 2s;
-  transition: padding 2s;
+  transition: color 1s;
 }
 
 .project-links a:first-child {
@@ -262,9 +234,7 @@ video#bgvid {
 
 
 .project-links a:hover {
-  /*color: black;*/
-  border: 2px solid white;
-  padding: 10px 20px;
+  color: black;
 }
 
 .about-wrapper {
@@ -418,6 +388,8 @@ video#bgvid {
     width: 80%;
     animation: none;
     text-align: center;
+    float: none;
+
   }
 
   .project-container-right {

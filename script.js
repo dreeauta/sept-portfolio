@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  
+
   // fade in skills
 
 var skills = $(".title").offset().top;
