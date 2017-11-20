@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  
+
 
   // fade in skills
 
@@ -22,9 +22,10 @@ $(document).scroll(function() {
     if($(this).scrollTop() > 770 ) {
       $(".project-container-drawingthings").delay(500).fadeIn(500);
       $(".project-container-blackjack").delay(1000).fadeIn(500);
-      $(".project-container-smarta").delay(1500).fadeIn(500);
-      $(".project-container-tictactoe").delay(2000).fadeIn(500);
+      $(".project-container-smarta").delay(2000).fadeIn(500);
       $(".project-container-coolgadgetsguru").delay(2500).fadeIn(500);
+      $(".project-container-tictactoe").delay(3000).fadeIn(500);
+
 
     }
 

@@ -6,9 +6,9 @@
 
     <title>Andreea Uta Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/icon/initials.ico" type="image/x-icon"/>
 
@@ -17,9 +17,12 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.3.1/lazyload.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.3.1/lazyload.min.js"></script>
     <script type="text/javascript" src="script.js"> </script>
 
   </head>
@@ -57,28 +60,16 @@
               <source src="img/title-bg.mp4" type="video/mp4">
           </video>
 
-          <p class="title animated bounceInDown">  Hi!  My name is Andreea Uta
-          and I design and build web applications.
+          <p class="title animated bounceInDown">  Hi!  I'm Andreea,
+          and I design and build web applications. <br>
+          <span style="font-size: 20px"> Checkout my portfolio below </span>
+          <br>
+          <a href="#skills"> <img src="img/down.png" alt=""> </a>
           </p>
         </div>
 
       </section>
 
-        <!-- <span class="span-1"> Hi! </span>
-        <span class="span-2"> My </span>
-        <span class="span-3"> name </span>
-        <span class="span-4"> is </span>
-        <span class="span-5"> Andreea </span>
-        <span class="span-6"> Uta </span> <br>
-        <span class="span-7"> and </span>
-        <span class="span-8"> I </span>
-        <span class="span-9"> am </span>
-        <span class="span-10"> a </span>
-         <span class="span-11"> full </span>
-         <span class="span-12"> stack </span>
-         <span class="span-13"> developer </span>
-         <span class="span-14">  and </span>
-         <span class="span-15"> designer. </span> -->
 
 
       </section>
@@ -102,6 +93,8 @@
               <li><img src="img/icon/nodejsicon.png" alt="Node.js" title="Node.js"></li>
               <li><img src="img/icon/pythonicon.png" alt="Python" title="Python"></li>
               <li><img src="img/icon/postgresqlicon.png" alt="PostgreSql" title="PostgreSql"></li>
+              <li><img src="img/icon/wordpress.png" alt="Wordpress" title="Wordpress"></li>
+
               <li><img src="img/icon/photoshopicon.png" alt="Photoshop" title="Photoshop"></li>
             </ul>
           </div>
@@ -138,7 +131,7 @@
           <h2>Drawing Things </h2>
           <img src="img/drawingthings.png">
           <div class="project-text">
-            <p> Using Socket.io and Javasript I built an application that allows you to collaborate with friends on beautiful pictures. </p>
+            <p> Using Socket.io and Javascript I built an application that allows you to collaborate with friends on beautiful pictures. </p>
             <p class="project-technologies"> <span>Technologies: </span> HTML, CSS, Javascript, jQuery </p>
             <div class="project-links">
               <a href="http://drawing-things.andreeauta.com/" onclick="window.open ('http://drawing-things.andreeauta.com/', ''); return false"> Demo </a>
@@ -179,21 +172,8 @@
 
 
 
-        <div  class="project-container project-container-right project-container-tictactoe">
-          <h2>Tic Tac Toe </h2>
-          <img src="img/tictactoe.png">
-          <div class="project-text">
-            <p> This is my first app using jQuery. I built a Tic Tac Toe game, and personalized it with my art. </p>
-            <p class="project-technologies"> <span>Technologies: </span> HTML, CSS, Javascript, jQuery </p>
-            <div class="project-links">
-              <a href="tic-tac-toe/tictactoe.html" target="_blank"> Demo </a>
-              <a href="https://github.com/dreeauta/DrawingThings-Project" onclick="window.open ('https://github.com/dreeauta/DrawingThings-Project', ''); return false"> Github </a>
-            </div>
-          </div>
-        </div>
 
-
-        <div class="project-container project-container-left project-container-coolgadgetsguru">
+        <div class="project-container project-container-right project-container-coolgadgetsguru">
           <h2>Cool Gadgets Guru </h2>
           <img src="img/coolgadgets.png">
 
@@ -206,6 +186,21 @@
             <div class="project-links">
               <a href="http://coolgadgetsguru.com" onclick="window.open ('http://coolgadgetsguru.com/', ''); return false" > Demo </a>
               <a href="https://github.com/dreeauta/wp-florin" onclick="window.open ('https://github.com/dreeauta/wp-florin', ''); return false"> Github </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div  class="project-container project-container-left project-container-tictactoe">
+          <h2>Tic Tac Toe </h2>
+          <img src="img/tictactoe.png">
+          <div class="project-text">
+            <p> This is my first app using jQuery. I built a Tic Tac Toe game, and personalized it with my art. </p>
+            <p class="project-technologies"> <span>Technologies: </span> HTML, CSS, Javascript, jQuery </p>
+            <div class="project-links">
+              <a href="tic-tac-toe/tictactoe.html" target="_blank"> Demo </a>
+              <a href="https://github.com/dreeauta/DrawingThings-Project" onclick="window.open ('https://github.com/dreeauta/DrawingThings-Project', ''); return false"> Github </a>
             </div>
           </div>
         </div>
@@ -223,11 +218,12 @@
           <img src="img/about-me.jpg">
 
         <p class="about-text">
-        I am a full-stack developer from Atlanta that recently graduated from Digital Crafts.
-        I build and design
+        My name is Andreea Uta, and I'm a front end developer
+        living in Atlanta, GA.
+        I build and design web
         applications using HTML, CSS, and JavaScript.
         I'm passionate about art and graphic design.
-        I also love the outdoors and exploring hiking trails with my dogs.
+        I also love the outdoors and exploring trails with my dogs.
         </p>
 
       </div>
