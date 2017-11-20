@@ -6,10 +6,10 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 34px;
+  font-size: 38px;
   margin-bottom: 40px;
   letter-spacing: .2em;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   padding-top: 30px;
   color: black;
   text-shadow: 2px 2px 3px  #BD9174;
@@ -47,7 +47,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../img/projects-bg.png) no-repeat;
+    background: url(../img/title-bg-mobile.png) no-repeat;
     background-size: cover;
 }
 
@@ -90,12 +90,11 @@ video#bgvid {
 .skills-wrapper {
   margin-top: 100px;
   height: 100vh;
-
+  padding-top: 50px;
 }
 
 .skills-container h1 {
-  padding-top: 60px ;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
 }
 
@@ -127,6 +126,7 @@ video#bgvid {
   vertical-align: top;
   margin-bottom: 20px;
   animation: slide-up 3s;
+  padding-top: 10px;
 }
 
 @keyframes slide-up {
@@ -145,6 +145,10 @@ video#bgvid {
   padding-bottom: 100px;
 }
 
+.project-wrapper h1 {
+  padding-bottom: 50px;
+}
+
 #project {
   width: 95%;
   margin: auto;
@@ -158,11 +162,11 @@ video#bgvid {
 
 .project-container h2 {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px 0px;
   letter-spacing: .125em;
   text-shadow: 2px 2px 2px #000;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Julius Sans One', sans-serif;
 
 }
 
@@ -314,18 +318,17 @@ video#bgvid {
 }
 
 .contact-wrapper {
-  background-image: url('../img/contact-bg.jpg');
-
+  background-image: url('../img/contact.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px;
+  height: 500px;
 }
 
 .contact-container {
-  width: 70%;
+  width: 60%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .contact-text h1 {
@@ -335,11 +338,11 @@ video#bgvid {
 
 
 .contact-text {
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.3);
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  padding: 20px 50px;
+  padding: 20px 60px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   line-height: 1.7em;
@@ -365,6 +368,10 @@ video#bgvid {
 
 @media only screen and (max-width: 900px) {
 
+  h1 {
+    font-size: 28px;
+  }
+
   video {
     display: none;
   }
@@ -388,6 +395,9 @@ video#bgvid {
     font-size: 30px;
   }
 
+  .skills-wrapper  {
+    margin-top: 0;
+  }
 
 
   .skills {
@@ -398,6 +408,7 @@ video#bgvid {
 
   .skills li {
     animation: none;
+    padding-top: 20px;
   }
 
   .skills img {
@@ -415,6 +426,14 @@ video#bgvid {
 
   }
 
+  .project-container h2 {
+    font-size: 20px;
+  }
+
+  .project-container p {
+    font-size: 16px;
+  }
+
   .project-container-right {
     float: none;
   }
@@ -428,11 +447,13 @@ video#bgvid {
     margin: 0;
   }
 
+
   .about-text {
     width: 80%;
     padding-left: 0;
     margin-bottom: 30px;
     animation: none;
+    font-size: 14px;
   }
 
   .contact-wrapper {
@@ -441,6 +462,7 @@ video#bgvid {
 
   .contact-container {
     width: 90%;
+    padding-top: 150px;
   }
 
 }
