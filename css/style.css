@@ -286,7 +286,7 @@ video#bgvid {
 
 .gallery-wrapper a {
   text-decoration: none;
-  color: lightblue;
+  color: purple;
   font-weight: bold;
   transition: 0.2s border;
 }
@@ -310,7 +310,10 @@ video#bgvid {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: rgba(239,235,223, .6);
-
+  background-image: url('../img/contact.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #about {
@@ -383,7 +386,7 @@ video#bgvid {
 .contact-container {
   width: 60%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .contact-text h1 {
