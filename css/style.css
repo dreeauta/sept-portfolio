@@ -440,7 +440,7 @@ video#bgvid {
 @media only screen and (max-width: 900px) {
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -534,7 +534,7 @@ video#bgvid {
 
 
   .gallery-wrapper h1 {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .gallery-wrapper h4 {
@@ -545,12 +545,18 @@ video#bgvid {
     line-height: 1.4em;
   }
 
+  .about-container img {
+    padding-bottom: 20px;
+    width: 60%;
+    margin: auto;
+  }
 
   .about-text {
     width: 80%;
     margin: auto;
     animation: none;
     font-size: 14px;
+    padding: 30px;
   }
 
   .contact-wrapper {
