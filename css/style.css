@@ -51,6 +51,12 @@ video#bgvid {
     background-size: cover;
 }
 
+.menu-icons {
+  position:absolute;
+  bottom: 50px;
+}
+
+
 
 
 .title-wrapper {
@@ -85,17 +91,20 @@ video#bgvid {
   line-height: 1.4em;
 }
 
+.title-container span {
+  font-size: 20px
+}
 
 
 .skills-wrapper {
-  margin-top: 100px;
-  height: 100vh;
+  margin-top: 50px;
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .skills-container h1 {
   margin-bottom: 30px;
-
+  margin-top: 50px;
 }
 
 .skills {
@@ -103,13 +112,12 @@ video#bgvid {
   width: 90%;
   margin: auto;
   display: none;
-}
-
-.skills {
   columns: 4;
   -webkit-columns: 4;
   -moz-columns: 4;
+  padding-top: 30px;
 }
+
 
 .skills img {
   height: 100px;
@@ -259,15 +267,65 @@ video#bgvid {
 
 }
 
+
+.gallery-wrapper {
+  margin-bottom: 100px;
+}
+
+.gallery-wrapper h1{
+  margin-top: 50px;
+
+}
+
+.gallery-wrapper h4 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+
+.gallery-wrapper a {
+  text-decoration: none;
+  color: lightblue;
+  font-weight: bold;
+  transition: 0.2s border;
+}
+
+.gallery-wrapper a:hover {
+  transition-delay: .2s;
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+
+.slide-box-carousel {
+  margin: auto;
+}
+
+#about {
+  background-color: rgba(239,235,223, .6);
+  width: 90%;
+  margin: auto;
+}
+
 .about-wrapper {
   clear: right;
-  width: 85%;
-  margin: auto;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-image: url('../img/contact.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
+.about-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+
+}
 
 .about img {
   margin-left: 30px;
@@ -276,14 +334,18 @@ video#bgvid {
 .about-text{
   display: inline-block;
   margin-bottom: 60px;
-  padding-top: 40px;
-  padding-left: 40px;
+  margin-left: 40px;
+  padding: 40px 40px;
   vertical-align: top;
   width: 50%;
   font-family: 'Poppins', sans-serif;
   line-height: 2em;
   word-spacing: .2em;
   /*animation: fadein 7s;*/
+  background-color: rgba(255,255,255,0.2);
+  -moz-box-shadow: 1px 2px 2px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 2px rgba(0,0,0,.5);
 }
 
 .about-text a, .contact-text a {
@@ -302,19 +364,21 @@ video#bgvid {
   text-decoration: none;
   color: black;
   border: 2px solid black;
-  background-color: white;
+  background-color: rgba(255,255,255, .3);
   padding: 10px 40px;
   margin-top: 20px;
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   border-radius: 4px;
-  transition: 0.5s color, 0.5s background-color;
+  transition: 0.5s border-color, 0.5s background-color;
+  box-shadow: 1px 2px 2px rgba(0,0,0,.5);
+
 }
 
 .resume a:hover {
-  background-color: black;
-  color: white;
-  transition-delay:.2s;
+  background-color: white;
+  border-color: white;
+  transition-delay:.4s;
 }
 
 .contact-wrapper {
@@ -328,7 +392,7 @@ video#bgvid {
 .contact-container {
   width: 60%;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .contact-text h1 {
@@ -372,28 +436,26 @@ video#bgvid {
     font-size: 28px;
   }
 
-  video {
+  /*video {
     display: none;
-  }
+  }*/
 
-  #menu {
-    background-color: white !important;
-  }
 
-  .title-wrapper {
+  /*.title-wrapper {
     background: url('../img/title-bg-mobile.png') no-repeat;
-  }
+  }*/
 
 
   .title-container {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
   }
 
   .title-container p {
-    width: 70%;
-    font-size: 30px;
+    width: 80%;
+    font-size: 26px;
   }
+
 
   .skills-wrapper  {
     margin-top: 0;

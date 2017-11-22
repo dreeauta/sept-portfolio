@@ -97,7 +97,7 @@
 #menu
 {
   position: absolute;
-  width: 100px;
+  width: 150px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -121,7 +121,7 @@
 
 #menu li
 {
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 22px;
 }
 
@@ -147,6 +147,20 @@
   border-bottom: 2px solid black;
   transition-delay:.3s;
 }
+
+.menu-icons a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 5px;
+  transition: 0s filter;
+}
+
+.menu-icons a:hover {
+  filter: blur(2px);
+  transition-delay:.2s;
+  border: none !important;
+}
+
 
 
 @media only screen and (max-width: 900px) {

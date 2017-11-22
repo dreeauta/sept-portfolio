@@ -32,6 +32,11 @@ $(document).scroll(function() {
 });
 
 
+$(function () {
+	initSlides();
+});
+
+
 
 // var $window = $(window);
 //

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/slidebox.css" type="text/css">
 
     <link rel="shortcut icon" href="img/icon/initials.ico" type="image/x-icon"/>
 
@@ -16,14 +17,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.3.1/lazyload.min.js"></script>
-    <script type="text/javascript" src="script.js"> </script>
 
   </head>
   <body>
@@ -48,7 +41,17 @@
             <li> <a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li>  <a href="#project">Projects</a></li>
+            <li>  <a href="#art">Art</a></li>
             <li> <a href="#about"> About</a></li>
+            <li> <a href="#contact"> Contact</a></li>
+
+            <div class="menu-icons">
+            <a href="https://github.com/dreeauta" target="_blank" >  <img src="img/icon/github.png"/>  </a>
+            <a href="https://www.linkedin.com/in/andreea-uta/" target="_blank" >  <img src="img/icon/linkedin.png"/>  </a>
+            <a href="https://www.instagram.com/abstractllama_art/" target="_blank" > <img src="img/icon/instagram.png"/>   </a>
+
+            </div>
+
           </ul>
         </div>
 
@@ -60,9 +63,9 @@
               <source src="img/title-bg.mp4" type="video/mp4">
           </video>
 
-          <p class="title animated bounceInDown">  Hi!  I'm Andreea,
-          and I design and build web applications. <br>
-          <span style="font-size: 20px"> Checkout my portfolio below </span>
+          <p class="title animated bounceInDown">  Hi! I'm Andreea,
+           I make art and develop web apps. <br>
+          <span class="sub-title"> Checkout my portfolio below </span>
           <br>
           <a href="#skills"> <img src="img/down.png" alt=""> </a>
           </p>
@@ -108,7 +111,7 @@
     <section class="project-wrapper">
 
       <div id="project">
-        <h1> Projects </h1>
+        <h1> Web Projects </h1>
 
 
 
@@ -208,37 +211,71 @@
       </div>
     </section>
 
+    <section class="gallery-wrapper">
 
-    <section class="about-wrapper">
+      <div id="art">
+        <h1> Art </h1>
+        <h4> Did I mention that I make art? Shop my collection <a href="http://abstractllamaart.etsy.com" target="_blank"> here </a></h4>
 
-        <div id="about">
 
-          <h1> About Me </h1>
+        <div class="slide-box slide-box-carousel" data-loop="true" data-interval="5000">
+        	<img class="slide" src="img/art/abstract1.jpeg" >
+        	<img class="slide" src="img/art/sun.jpg">
+          <img class="slide" src="img/art/abstract2.jpg">
+          <img class="slide" src="img/art/abstract3.jpg">
 
-          <img src="img/about-me.jpg">
+        	<div class="controls">
+        		<a href="#" class="close">Close</a>
+        		<a href="#" class="prev disabled">Previous</a>
+        		<a href="#" class="next">Next</a>
+        	</div>
 
-        <p class="about-text">
-        My name is Andreea Uta, and I'm a front end developer
-        living in Atlanta, GA.
-        I build and design web
-        applications using HTML, CSS, and JavaScript.
-        I'm passionate about art and graphic design.
-        I also love the outdoors and exploring trails with my dogs.
-        </p>
+        	<ul class="pager pager-inline">
+        		<li><a href="#" class="number 1 active" title="1">1</a></li>
+        		<li><a href="#" class="number 2" title="2">2</a></li>
+        		<li><a href="#" class="number 3" title="3">3</a></li>
+            <li><a href="#" class="number 4" title="4">4</a></li>
+
+        	</ul>
+        </div>
+
 
       </div>
 
-      <span class="resume">  <a class="resume" href="img/Andreea-Uta-Developer-Resume.pdf"> Resume </a> </span>
+    </section>
 
 
+    <section class="about-wrapper">
+      <div id="about">
 
+          <h1> About Me </h1>
+
+      <div class="about-container">
+
+          <img src="img/profile.jpg">
+
+          <p class="about-text">
+          My name is Andreea Uta, and I'm an artist and Front-end developer
+          living in Atlanta, GA.
+          I build and design web
+          applications using HTML, CSS, and JavaScript.
+          I'm passionate about art and graphic design.
+          I also love the outdoors and exploring trails with my dogs.
+          </p>
+
+      </div>
+
+        <span class="resume">  <a class="resume" href="img/Andreea-Uta-Developer-Resume.pdf"> Resume </a> </span>
+
+
+    </div>
 
     </section>
 
     <section class="contact-wrapper">
 
 
-    <div class="contact-container">
+    <div id="contact" class="contact-container">
         <div class="contact-text">
           <h1>Contact </h1>
 
@@ -247,9 +284,9 @@
         </p>
 
         <div class="icons">
-        <a href="https://github.com/dreeauta">  <img src="img/icon/github.png"/>  </a>
-        <a href="https://www.linkedin.com/in/andreea-uta/">  <img src="img/icon/linkedin.png"/>  </a>
-        <a href="https://www.instagram.com/dreeallama_art/"> <img src="img/icon/instagram.png"/>   </a>
+          <a href="https://github.com/dreeauta" target="_blank" >  <img src="img/icon/github.png"/>  </a>
+          <a href="https://www.linkedin.com/in/andreea-uta/" target="_blank" >  <img src="img/icon/linkedin.png"/>  </a>
+          <a href="https://www.instagram.com/abstractllama_art/" target="_blank" > <img src="img/icon/instagram.png"/>   </a>
         </div>
       </div>
 
@@ -257,6 +294,14 @@
 
     </section>
 
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.3.1/lazyload.min.js"></script>
+    <script type="text/javascript" src="js/script.js"> </script>
+    <script src="js/slidebox-min.js" type="text/javascript"></script>
 
   </body>
 </html>
