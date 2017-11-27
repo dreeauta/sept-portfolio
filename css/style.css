@@ -97,9 +97,11 @@ video#bgvid {
 
 
 .skills-wrapper {
-  margin-top: 50px;
-  padding-top: 50px;
-  margin-bottom: 100px;
+  /*margin-top: 50px;*/
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+
 }
 
 .skills-container h1 {
@@ -307,24 +309,20 @@ video#bgvid {
 .about-wrapper {
   clear: right;
   text-align: center;
+  background-color: rgba(239,235,223, .3);
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: rgba(239,235,223, .6);
-  background-image: url('../img/contact.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  padding-bottom: 80px;
 }
 
-#about {
+/*#about {
   width: 90%;
   margin: auto;
-  background-image: url('../img/contact.jpg');
+background-image: url('../img/contact.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 20px;
-}
+}*/
 
 .about-container {
   width: 90%;
@@ -386,7 +384,7 @@ video#bgvid {
 .contact-container {
   width: 60%;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .contact-text h1 {
@@ -429,13 +427,13 @@ video#bgvid {
   text-decoration: none;
   color: black;
   padding: 0px 10px 50px 10px;
+  filter: invert(30%);
   transition: 0s filter;
 }
 
 .icons a:hover {
-  transition-delay:.2s;
-  filter: invert(100%);
-
+  transition-delay:.4s;
+  filter: invert(0%);
 }
 
 
@@ -474,7 +472,7 @@ video#bgvid {
 
 
   .skills-wrapper  {
-    margin-top: 0;
+    padding-top: 50px;
   }
 
 

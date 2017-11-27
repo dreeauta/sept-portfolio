@@ -157,10 +157,12 @@
   color: black;
   padding: 0px 5px;
   transition: 0s filter;
+  filter: invert(20%);
+
 }
 
 .menu-icons a:hover {
-  filter: invert(100%);
+  filter: invert(0%);
   transition-delay:.2s;
   border: none !important;
 }
