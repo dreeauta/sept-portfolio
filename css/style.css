@@ -314,6 +314,10 @@ video#bgvid {
   padding-bottom: 80px;
 }
 
+.about-wrapper h1 {
+  margin-bottom: 70px;
+}
+
 /*#about {
   width: 90%;
   margin: auto;
@@ -344,7 +348,8 @@ background-image: url('../img/contact.jpg');
   line-height: 2em;
   word-spacing: .2em;
   /*animation: fadein 7s;*/
-  background-color: rgba(255,255,255,0.2);
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius: 3px;
   -moz-box-shadow: 1px 2px 2px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,.5);
   box-shadow: 1px 2px 2px rgba(0,0,0,.5);
@@ -362,14 +367,14 @@ background-image: url('../img/contact.jpg');
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   border-radius: 4px;
-  transition: 0.5s border-color, 0.5s background-color;
+  transition: 0.5s color, 0.5s background-color;
   box-shadow: 1px 2px 2px rgba(0,0,0,.5);
 
 }
 
 .resume a:hover {
-  background-color: white;
-  border-color: white;
+  background-color: black;
+  color: white;
   transition-delay:.4s;
 }
 
@@ -544,6 +549,10 @@ background-image: url('../img/contact.jpg');
     padding-bottom: 20px;
     font-size: 14px;
     line-height: 1.4em;
+  }
+
+  .about-wrapper h1 {
+    margin-bottom: 40px;
   }
 
   .about-container img {
