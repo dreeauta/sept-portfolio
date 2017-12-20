@@ -68,7 +68,9 @@ $('document').ready(function() {
         player = 1;
         //switch turns to player 1
         if (checkWon('o')) {
-          alert('Player 2 has Won!'); }
+          alert('Player 2 has Won!');
+
+        }
     }
   }
 });
@@ -114,8 +116,10 @@ function checkWon(winner) {
 
 
 $('.resetButton').click(function() {
-  $('.o').removeAtr(".button");
-  $('.x').removeAtr(".button");
+  var selected = $(this);
+
+  $('.button').removeClass('x');
+  $('.button').removeClass('o');
 
    });
 
