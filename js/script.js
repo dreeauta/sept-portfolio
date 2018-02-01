@@ -38,15 +38,6 @@ $(function () {
 
 
 
-// var $window = $(window);
-//
-// $(window).on('scroll', function() {
-//     $topOffset = $(this).scrollTop();
-//
-//     console.log($topOffset);
-//
-// });
-
 console.log($(document).scrollTop());
 
 

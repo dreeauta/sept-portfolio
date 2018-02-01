@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.body-wrapper {
+  overflow-x: hidden;
+}
+
 h1 {
   text-align: center;
   font-size: 38px;
@@ -13,25 +17,7 @@ h1 {
   padding-top: 30px;
   color: black;
   text-shadow: 2px 2px 3px  #BD9174;
-  /*color: rgb(58, 84, 100);*/
 }
-
-/*KEYFRAMES*/
-
-/*@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes move-left {
-    from {opacity: 0; right: 400px;}
-    to {opacity: 1; right: 0px;}
-}
-
-@keyframes move-right {
-    from {opacity: 0; left: 400px;}
-    to {opacity: 1; left: 0px;}
-}*/
 
 
 video#bgvid {
@@ -71,9 +57,6 @@ video#bgvid {
   margin-top: 200px;
   background-color: rgba(255,255,255,.4);
   width: 50%;
-  /*background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%);
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%);
-  background: radial-gradient(ellipse at center, rgba(255,255,255,.7) 0%,rgba(255,255,255,0) 100%); */
   float: right;
 }
 
@@ -85,8 +68,6 @@ video#bgvid {
   font-size: 36px;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
-  /*text-shadow: 3px 3px 3px  #000;*/
-
   letter-spacing: .075em;
   line-height: 1.4em;
 }
@@ -97,7 +78,6 @@ video#bgvid {
 
 
 .skills-wrapper {
-  /*margin-top: 50px;*/
   padding-top: 80px;
   padding-bottom: 100px;
 
@@ -162,13 +142,8 @@ video#bgvid {
 #project {
   width: 95%;
   margin: auto;
-
 }
 
-/*.project-wrapper h1 {
-  color: white;
-  text-shadow: 2px 2px #000;
-}*/
 
 .project-container h2 {
   text-align: center;
@@ -188,16 +163,12 @@ video#bgvid {
 .project-container {
   width: 45%;
   display: inline-block;
-  /*border: 2px solid black;*/
   height: 350px;
   padding: 20px;
   margin-bottom: 30px;
-  /*background-color: rgba(58, 84, 100, 0.7);*/
   background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.46) 54%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.46) 54%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.46) 54%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-  /*background-color: rgba( 255, 255, 255, 0.7);*/
   border-radius: 5px;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -265,8 +236,6 @@ video#bgvid {
 
 .project-links a:hover {
   color: black;
-  /*text-shadow: 1px 1px 1px black;*/
-
 }
 
 
@@ -317,16 +286,6 @@ video#bgvid {
 .about-wrapper h1 {
   margin-bottom: 70px;
 }
-
-/*#about {
-  width: 90%;
-  margin: auto;
-background-image: url('../img/contact.jpg');
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 20px;
-}*/
 
 .about-container {
   width: 90%;
@@ -417,7 +376,6 @@ background-image: url('../img/contact.jpg');
 .contact-text p a {
   border: none;
   padding: 0;
-  /*background-color: white;*/
   color: black;
   transition: 0.2s border;
   text-decoration: none;
@@ -454,15 +412,6 @@ background-image: url('../img/contact.jpg');
     padding-top: 0px;
 
   }
-
-  /*video {
-    display: none;
-  }*/
-
-
-  /*.title-wrapper {
-    background: url('../img/title-bg-mobile.png') no-repeat;
-  }*/
 
 
   .title-container {
@@ -503,14 +452,13 @@ background-image: url('../img/contact.jpg');
   }
 
   .project-container {
-    margin-left: 15px;
-    margin-bottom: 40px;
+    display: block;
+    margin: 50px auto;
     height: 550px;
     width: 80%;
     animation: none;
     text-align: center;
     float: none;
-
   }
 
   .project-container h2 {
