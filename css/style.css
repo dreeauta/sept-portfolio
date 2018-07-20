@@ -133,6 +133,7 @@ video#bgvid {
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 100px;
+  min-height: 400px;
 }
 
 .project-wrapper h1 {
@@ -217,7 +218,7 @@ video#bgvid {
 .project-links a {
   text-decoration: none;
   color: white;
-  transition: color 1s;
+  transition: color .3s;
   text-shadow: 2px 2px 2px black;
 }
 
@@ -236,6 +237,8 @@ video#bgvid {
 
 .project-links a:hover {
   color: black;
+  text-shadow: 0;
+
 }
 
 
@@ -290,7 +293,7 @@ video#bgvid {
 .about-container {
   width: 90%;
   margin: auto;
-
+  min-height: 400px;
 }
 
 .about img {
@@ -325,8 +328,8 @@ video#bgvid {
   margin-top: 30px;
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
-  border-radius: 4px;
-  transition: 0.5s color, 0.5s background-color;
+  border-radius: 2px;
+  transition: 0.3s color, 0.3s background-color;
   box-shadow: 1px 2px 2px rgba(0,0,0,.5);
 
 }

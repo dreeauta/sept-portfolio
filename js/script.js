@@ -20,11 +20,11 @@ $( ".project-container" ).hide();
 
 $(document).scroll(function() {
     if($(this).scrollTop() > 770 ) {
-      $(".project-container-drawingthings").delay(500).fadeIn(500);
-      $(".project-container-blackjack").delay(1000).fadeIn(500);
-      $(".project-container-smarta").delay(2000).fadeIn(500);
-      $(".project-container-coolgadgetsguru").delay(2500).fadeIn(500);
-      $(".project-container-tictactoe").delay(3000).fadeIn(500);
+      // $(".project-container-drawingthings").delay(500).fadeIn(500);
+      $(".project-container-blackjack").delay(500).fadeIn(500);
+      $(".project-container-smarta").delay(1000).fadeIn(500);
+      $(".project-container-coolgadgetsguru").delay(1500).fadeIn(500);
+      $(".project-container-tictactoe").delay(2000).fadeIn(500);
 
 
     }
@@ -42,11 +42,11 @@ console.log($(document).scrollTop());
 
 
 var about = $(".about-wrapper").offset().top;
-$( ".about-text" ).hide();
+$( ".about-container" ).hide();
 
 $(document).scroll(function() {
     if($(this).scrollTop() > 1800 ) {
-      $(".about-text").delay(1000).fadeIn(2000);
+      $(".about-container").delay(1000).fadeIn(2000);
     }
 });
 

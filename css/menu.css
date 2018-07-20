@@ -1,193 +1,199 @@
-#menuToggle
-{
-  display: inline-block;
-  position: relative;
-  top: 50px;
-  left: 50px;
+#menuToggle {
+    position: relative;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
 
-  z-index: 1;
+    display: inline-block;
 
-  -webkit-user-select: none;
-  user-select: none;
+    -webkit-user-select: none;
+            user-select: none;
 }
 
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+#menuToggle input {
+    position: absolute;
+    z-index: 2; /* and place it over the hamburger */
+    top: -7px;
+    left: -5px;
 
-  cursor: pointer;
+    display: block;
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+    width: 40px;
+    height: 32px;
 
-  -webkit-touch-callout: none;
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+
+    -webkit-touch-callout: none;
 }
 
 /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+#menuToggle span {
+    position: relative;
+    z-index: 1;
 
-  background: black;
-  border-radius: 3px;
+    display: block;
 
-  z-index: 1;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
 
-  transform-origin: 4px 0px;
+    transition: transform .5s cubic-bezier(.77,.2,.05,1.0),
+    background .5s cubic-bezier(.77,.2,.05,1.0),
+    opacity .55s ease;
+    transform-origin: 4px 0;
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+    border-radius: 3px;
+    background: black;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+#menuToggle span:first-child {
+    transform-origin: 0 0;
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0 100%;
 }
 
 /*
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+#menuToggle input:checked ~ span {
+    transform: rotate(45deg) translate(-2px, -1px);
+
+    opacity: 1;
+    background: #232323;
 }
 
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    transform: rotate(0deg) scale(.2, .2);
+
+    opacity: 0;
 }
 
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+
+    opacity: 1;
 }
 
 /*
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
-  position: absolute;
-  width: 150px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  height: 80vh;
-  background: white;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+#menu {
+    position: absolute;
 
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+    width: 150px;
+    height: 80vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    list-style-type: none;
 
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transition: transform .5s cubic-bezier(.77,.2,.05,1.0);
+    transform: translate(-100%, 0);
+    /* to stop flickering of text in safari */
+    transform-origin: 0 0;
 
+    background: white;
+    background:    -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background:         radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    -webkit-font-smoothing: antialiased;
 }
 
 
-#menu li
-{
-  padding: 20px 0;
-  font-size: 22px;
+#menu li {
+    font-size: 22px;
+
+    padding: 20px 0;
 }
 
 /*
  * And let's fade it in from the left
  */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: .9;
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+
+    opacity: .9;
 }
 
 #menu a {
-  text-decoration: none;
-  color: black;
-  /*margin-right: 35px;*/
-  font-family: 'Poppins', sans-serif;
-  transition: 0s border, 0s font-size;
+    /*margin-right: 35px;*/
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0s border, 0s font-size;
+    text-decoration: none;
+
+    color: black;
 }
 
 #menu a:hover {
-  padding-bottom: 5px;
-  border-bottom: 2px solid black;
-  transition-delay:.3s;
+    padding-bottom: 5px;
+
+    transition-delay: .3s;
+
+    border-bottom: 2px solid black;
 }
 
 .menu-icons {
-  text-align: center;
+    text-align: center;
 }
 
 .menu-icons a {
-  text-decoration: none;
-  color: black;
-  padding: 0px 5px;
-  transition: 0s filter;
-  filter: invert(20%);
+    padding: 0 5px;
 
+    transition: 0s filter;
+    text-decoration: none;
+
+    color: black;
+
+    filter: invert(20%);
 }
 
 .menu-icons a:hover {
-  filter: invert(0%);
-  transition-delay:.2s;
-  border: none !important;
+    transition-delay: .2s;
+
+    border: none !important;
+
+    filter: invert(0%);
 }
 
 
 
 @media only screen and (max-width: 900px) {
-  #menu {
-    /*text-align: center;*/
-    width: 100vw;
-    padding: 100px 0;
-  }
+    #menu {
+        /*text-align: center;*/
+        width: 100vw;
+        padding: 100px 0;
+    }
 
-  #menuToggle input:checked ~ ul {
-    background-color: white;
+    #menuToggle input:checked ~ ul {
+        background-color: white;
+    }
 
-  }
+    #menu li {
+        font-size: 30px;
 
-  #menu li {
-    font-size: 30px;
-    text-align: center;
-  }
+        text-align: center;
+    }
 
-  .menu-icons {
-    position: initial;
-    margin-top: 30px;
-  }
+    .menu-icons {
+        position: initial;
+
+        margin-top: 30px;
+    }
 }
