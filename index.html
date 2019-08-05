@@ -40,7 +40,7 @@
           <ul id="menu">
             <li> <a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li>  <a href="#project">Projects</a></li>
+            <li>  <a href="#projects">Projects</a></li>
             <!-- <li>  <a href="#art">Art</a></li> -->
             <li> <a href="#about"> About</a></li>
             <li> <a href="#contact"> Contact</a></li>
@@ -55,16 +55,14 @@
           </ul>
         </div>
 
-        <section>
-
-        <div class="title-container">
-
+        <section class="hero">
           <video playsinline autoplay muted loop poster="img/title-bg-mobile.png" id="bgvid">
               <source src="img/title-bg.mp4" type="video/mp4">
           </video>
+        <div class="title-container">
 
           <p class="title animated bounceInDown">  Hi! I'm Andreea,
-           I design and develop web apps. <br>
+           I design and develop websites. <br>
           <span class="sub-title"> Check out my portfolio below </span>
           <br>
           <a href="#skills"> <img src="img/down.png" alt=""> </a>
@@ -80,42 +78,87 @@
 
     <section class="skills-wrapper">
 
-      <div id="skills">
+        <div id="skills">
+          <h1>Skills</h1>
 
-        <div class="skills-container">
-          <div >
-            <h1>Skills</h1>
-            <ul class="skills">
-              <li> <img src="img/icon/htmlicon.png" alt="HTML" title="HTML"> </li>
-              <li> <img src="img/icon/cssicon.png" alt="CSS" title="CSS"> </li>
-              <li><img src="img/icon/scssicon.png" alt="SCSS" title="SCSS"> </li>
-              <li> <img src="img/icon/javascripticon.png" alt="Javascript" title="Javascript"></li>
-              <li class="jquery"><img src="img/icon/jqueryicon.png" alt="jQuery" title="jQuery"></li>
-              <li><img src="img/icon/reacticon.png" alt="React" title="React"></li>
-              <li><img src="img/icon/reduxicon.png" alt="Redux" title="Redux"></li>
-              <li><img src="img/icon/nodejsicon.png" alt="Node.js" title="Node.js"></li>
-              <li><img src="img/icon/pythonicon.png" alt="Python" title="Python"></li>
-              <li><img src="img/icon/postgresqlicon.png" alt="PostgreSql" title="PostgreSql"></li>
-              <li><img src="img/icon/wordpress.png" alt="Wordpress" title="Wordpress"></li>
+          <div class="skills-container">
+              <ul class="skills">
+                <li> <img src="img/icon/htmlicon.png" alt="HTML" title="HTML"> </li>
+                <li> <img src="img/icon/cssicon.png" alt="CSS" title="CSS"> </li>
+                <li><img src="img/icon/scssicon.png" alt="SCSS" title="SCSS"> </li>
+                <li> <img src="img/icon/javascripticon.png" alt="Javascript" title="Javascript"></li>
+                <li class="jquery"><img src="img/icon/jqueryicon.png" alt="jQuery" title="jQuery"></li>
+                <li><img src="img/icon/reacticon.png" alt="React" title="React"></li>
+                <li><img src="img/icon/reduxicon.png" alt="Redux" title="Redux"></li>
+                <li><img src="img/icon/nodejsicon.png" alt="Node.js" title="Node.js"></li>
+                <li><img src="img/icon/pythonicon.png" alt="Python" title="Python"></li>
+                <li><img src="img/icon/postgresqlicon.png" alt="PostgreSql" title="PostgreSql"></li>
+                <li><img src="img/icon/wordpress.png" alt="Wordpress" title="Wordpress"></li>
 
-              <li><img src="img/icon/photoshopicon.png" alt="Photoshop" title="Photoshop"></li>
-            </ul>
-          </div>
+                <li><img src="img/icon/photoshopicon.png" alt="Photoshop" title="Photoshop"></li>
+              </ul>
+
+        </div>
 
       </div>
-
-    </div>
 
     </section>
 
     <section class="project-wrapper">
+      <div class="projects professional-projects" id="projects">
+        <h1> Professional Projects </h1>
 
-      <div id="project">
+        <div class="project-container project-container-left">
+          <h2>Momentus </h2>
+          <a href="http://mymomentus.com/" target="_blank"> <img src="img/momentus.png"></a>
+
+          <div class="project-text">
+            <p>Built a static landing page for MomentUs using HTML, CSS, and Javascript. </p>
+            <p class="project-technologies"> <span>Technologies: </span> HTML, CSS, Javascript, jQuery </p>
+            <div class="project-links">
+              <a href="http://mymomentus.com/" target="_blank" > Website </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container project-container-right">
+          <h2>Secureworks </h2>
+          <a href="https://www.secureworks.com/" target="_blank"> <img src="img/secureworks.png"></a>
+          <div class="project-text">
+            <p>This project was a complete website redesign. I worked with a Sitecore developer to implement my
+              front end code into reusable Sitecore components.
+            </p>
+            <p class="project-technologies"> <span>Technologies: </span> HTML, SCSS, Javascript </p>
+            <div class="project-links">
+              <a href="https://www.secureworks.com/" target="_blank" > Website </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="project-container project-container-left">
+          <h2>Vacation.com </h2>
+          <a href="https://www.vacation.com/" target="_blank"> <img src="img/vacation.png"> </a>
+
+          <div class="project-text">
+            <p>Worked with a designer and Sitecore developer to rebuild Vacation.com to help target a new
+              audience and grow conversions.</p>
+            <p class="project-technologies"> <span>Technologies: </span> HTML, SCSS, Javascript </p>
+            <div class="project-links">
+              <a href="https://www.vacation.com/"  target="_blank"> Website </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="projects">
         <h1> Web Projects </h1>
 
 
-
-        <!-- <div  class="project-container project-container-left project-container-drawingthings">
+<!--
+        <div  class="project-container project-container-left">
           <h2>Drawing Things </h2>
           <img src="img/drawingthings.png">
           <div class="project-text">
@@ -142,12 +185,11 @@
           </div>
         </div>
 
-        <div class="project-container project-container-right project-container-smarta">
+        <!-- <div class="project-container project-container-right project-container-smarta">
           <h2>Smarta </h2>
           <img src="img/smarta.png">
 
           <div class="project-text">
-            <!-- I helped build an application with a team of 4 to connect Marta and local Atlanta businesses together. -->
             <p>
               Smarta links Yelp, Marta, and Google Maps together to easily search for businesses along your Marta route. </p>
             <p class="project-technologies"> <span>Technologies: </span> Express, Node.JS, BlueBird, HTML, CSS, Javascript </p>
@@ -156,12 +198,12 @@
               <a href="https://github.com/dreeauta/Smarta" onclick="window.open ('https://github.com/dreeauta/Smarta', ''); return false"> Github </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
 
-        <div class="project-container project-container-left project-container-coolgadgetsguru">
+        <div class="project-container project-container-right project-container-coolgadgetsguru">
           <h2>Cool Gadgets Guru </h2>
           <img src="img/coolgadgets.png">
 
@@ -180,7 +222,7 @@
 
 
 
-        <div  class="project-container project-container-right project-container-tictactoe">
+        <div  class="project-container project-container-left project-container-tictactoe">
           <h2>Tic Tac Toe </h2>
           <img src="img/tictactoe.png">
           <div class="project-text">

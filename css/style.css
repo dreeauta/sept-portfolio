@@ -16,7 +16,6 @@ h1 {
   font-family: 'Julius Sans One', sans-serif;
   padding-top: 30px;
   color: black;
-  text-shadow: 2px 2px 3px  #BD9174;
 }
 
 
@@ -43,21 +42,25 @@ video#bgvid {
 }
 
 
-
+.hero {
+  position: relative;
+  height: 100vh;
+}
 
 .title-wrapper {
-  height: 100vh;
   /*background-image: url(../img/title-bg.gif);*/
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .title-container {
-  margin-top: 200px;
   background-color: rgba(255,255,255,.4);
   width: 50%;
-  float: right;
+  position: absolute;
+  bottom:20%;
+  right: 5%;
 }
 
 .title-container p {
@@ -80,11 +83,10 @@ video#bgvid {
 .skills-wrapper {
   padding-top: 80px;
   padding-bottom: 100px;
-
-
+  height: 100vh;
 }
 
-.skills-container h1 {
+.skills-wrapper h1 {
   margin-bottom: 30px;
   margin-top: 50px;
 }
@@ -140,7 +142,7 @@ video#bgvid {
   padding-bottom: 50px;
 }
 
-#project {
+.projects {
   width: 95%;
   margin: auto;
 }
@@ -157,7 +159,9 @@ video#bgvid {
 }
 
 .project-container img {
-  margin: 10px 0 0 20px;
+  margin: 20px 0 0 10px;
+  height: 210px;
+  width: 180px;
 }
 
 
@@ -170,7 +174,6 @@ video#bgvid {
   background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.46) 54%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.46) 54%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.46) 54%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-radius: 5px;
   color: white;
   font-family: 'Poppins', sans-serif;
   position: relative;
@@ -197,7 +200,7 @@ video#bgvid {
 
 .project-text {
   display: inline-block;
-  width: 50%;
+  width: 60%;
   float: right;
   margin-top: 25px;
   line-height: 1.5em;
@@ -218,27 +221,20 @@ video#bgvid {
 .project-links a {
   text-decoration: none;
   color: white;
-  transition: color .3s;
-  text-shadow: 2px 2px 2px black;
+  transition: all .3s;
+  padding: 5px 15px;
+  border: 1px solid white;
 }
 
-.project-links a:first-child {
-  border-right: 1px solid white;
-  padding-right: 15px;
 
-}
-
-.project-links a:last-child {
-  border-left: 1px solid white;
-  padding-left: 15px;
-
+.project-links a:nth-child(2n) {
+  margin-left: 15px;
 }
 
 
 .project-links a:hover {
+  background: white;
   color: black;
-  text-shadow: 0;
-
 }
 
 
@@ -421,6 +417,17 @@ video#bgvid {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+  .project-text {
+    width: 48%;
+  }
+
+  .project-container {
+    height: 390px;
+  }
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -436,8 +443,10 @@ video#bgvid {
 
 
   .title-container {
-    margin-top: 150px;
     width: 100%;
+    right: 0;
+    left: 0;
+
   }
 
   .title-container p {
@@ -449,8 +458,6 @@ video#bgvid {
   .skills-wrapper  {
     padding-top: 50px;
   }
-
-
 
   .skills {
     columns: 3;
@@ -501,6 +508,8 @@ video#bgvid {
 
   .project-container img {
     margin: 0;
+    height: 270px;
+    width: 220px;
   }
 
   .slide-box-carousel {

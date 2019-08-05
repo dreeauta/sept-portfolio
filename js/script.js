@@ -15,21 +15,21 @@ $(document).scroll(function() {
 
 // fade in projects
 
-var project = $(".skills").offset().top;
-$( ".project-container" ).hide();
 
-$(document).scroll(function() {
-    if($(this).scrollTop() > 770 ) {
-      // $(".project-container-drawingthings").delay(500).fadeIn(500);
-      $(".project-container-blackjack").delay(500).fadeIn(500);
-      $(".project-container-smarta").delay(1000).fadeIn(500);
-      $(".project-container-coolgadgetsguru").delay(1500).fadeIn(500);
-      $(".project-container-tictactoe").delay(2000).fadeIn(500);
+var project = $('.project-wrapper').offset().top,
+    $window = $(window);
+$(".project-container").hide();
+$(".projects h1").hide();
 
-
+$window.scroll(function() {
+    if ( $window.scrollTop() >= project - 300) {
+      $('.project-container').each(function(index){
+        $(this).delay(500 * index).fadeIn(1000);
+      });
+      $(".projects h1").fadeIn(500);
     }
-
 });
+
 
 
 $(function () {
